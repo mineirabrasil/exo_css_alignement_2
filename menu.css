@@ -1,0 +1,30 @@
+body>header nav {
+    background: purple;
+    width: calc( 100vw / 3 );
+    font-size: 0px; /*supprime l'espace blanc*/
+    text-align: right;
+}
+
+body>header nav ul {
+    background: green;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    font-size: 1rem;
+    color: yellow;
+}
+
+body>header nav .material-icons-two-tone:hover +ul,
+body>header nav ul:hover {
+    visibility: visible;
+    height: 80px;
+    transition: color ease .5s;
+    color: red;
+}
+
+body>header nav .material-icons-two-tone {
+    font-size: 48px;
+    
+}

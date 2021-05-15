@@ -1,0 +1,5 @@
+body article {
+    height: calc( 100vh - 48px - 20px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /*propre au tactile*/
+}
